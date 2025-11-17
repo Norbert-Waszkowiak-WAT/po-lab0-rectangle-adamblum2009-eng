@@ -3,12 +3,11 @@ using namespace std;
  
 class Rectangle {
 private:
-    double height, width;
+    double width, height;
  
 public:
     Rectangle(double w, double h)
         : width(w), height(h) {}
- 
     void setWidth(double w) {
         width = w;
     }
@@ -24,7 +23,6 @@ public:
     double area() const {
         return width * height;
     }
-
     double perimeter() const {
         return 2 * (width + height);
     }
