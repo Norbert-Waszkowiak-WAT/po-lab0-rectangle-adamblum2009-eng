@@ -3,7 +3,7 @@
 #include "rectangle.cpp"
 
 TEST_CASE("Rectangle constructor initializes width and height", "[constructor]") {
-    Rectangle rect(10.0, 5.0);
+    random_device rect(10.0, 5.0);
     REQUIRE(rect.getWidth() == 10.0);
     REQUIRE(rect.getHeight() == 5.0);
 }
